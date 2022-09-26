@@ -4,7 +4,7 @@
   "description": "ID Card Generator for NRPG",
   "scripts": {
     "compileJS": "node index.js",
-    "compileFlatFile": "npx parcel build --no-content-hash src/index.pug",
+    "compileFlatFile": "npx parcel build --no-content-hash --dist-dir docs src/index.pug",
     "build": "npm run compileJS && npm run compileFlatFile"
   },
   "author": "Zee1234",
