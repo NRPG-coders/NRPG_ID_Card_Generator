@@ -1,0 +1,21 @@
+{
+  "name": "nrpgidcard",
+  "version": "1.0.0",
+  "description": "ID Card Generator for NRPG",
+  "scripts": {
+    "compileJS": "node index.js",
+    "compileFlatFile": "npx parcel build --no-content-hash src/index.pug",
+    "build": "npm run compileJS && npm run compileFlatFile"
+  },
+  "author": "Zee1234",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10"
+  }
+}

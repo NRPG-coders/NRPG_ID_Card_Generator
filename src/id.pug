@@ -1,0 +1,41 @@
+- vilColor = { kono: "#28873e", kumo: "#5a3d7f", hoshi: "#4a848b", suna: "#bba347", kiri: "#004489", tanbo: "#fff"}
+- vilBlock = { kono: "Konohagakure", kumo: "Kumogakure", hoshi: "Hoshigakure", suna: "Sunagakure", kiri: "Kirigakure", tanbo: "Tanbogakure" }
+.id_container
+    .id_header
+        span(style="color:"+vilColor[village]+";")=vilBlock[village] + " no Sato"
+        img
+    .id_left 
+        img(src=img, alt=firstName+' '+lastName, width="100px", style="max-height: 135px")
+    .id_right 
+        .id_name=firstName + ' ' + lastName
+        .id_rank=rank
+        .id_details 
+            .id_age.id_l
+                span.id_deets Age
+                br
+                span=age
+            .id_eye.id_c
+                span.id_deets Eye Color
+                br
+                span=eyeColor
+            .id_height.id_r
+                span.id_deets Height
+                br
+                span=height
+            .id_gender.id_l
+                span.id_deets Gender
+                br
+                span=gender
+            .id_hair.id_c
+                span.id_deets Hair Color
+                br
+                span=hairColor
+            .id_weight.id_r
+                span.id_deets Weight
+                br
+                span=weight
+    .id_charSig.id_docsig=firstName + ' ' + lastName
+    .id_approveSig.id_r
+        span.id_deets="Official Shinobi as rendered by "+vilBlock[village]+" Administration"
+        br
+        span.id_docsig=sig

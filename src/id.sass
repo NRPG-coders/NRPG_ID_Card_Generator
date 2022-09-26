@@ -1,0 +1,88 @@
+@import url('http://fonts.cdnfonts.com/css/doctor-signature')
+
+$leftoffset: 10px
+$rightoffset: 45px
+
+.id_container
+    width: 500px
+    height: 250px
+    border: 1px solid black
+    border-radius: 25px
+    position: relative
+    background-color: white
+    color: black
+
+.id_header
+    width: 400px
+    height: 50px
+    line-height: 50px
+    text-align: center
+    position: relative
+    margin: 0 auto
+    text-transform: uppercase
+    font-size: 25px
+    color: white
+    background-color: black
+
+    img
+        display: inline-block
+
+.id_name
+    font-size: 25px
+    text-align: center
+
+.id_rank
+    font-size: 20px
+    text-align: center
+
+.id_left
+    width: 100px
+    height: 130px
+    position: absolute
+    bottom: 60px
+    left: $leftoffset
+
+.id_right
+    width: 300px
+    height: 130px
+    position: absolute
+    bottom: 60px
+    right: $rightoffset
+    font-size: 15px
+
+.id_details
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr
+
+    .id_deets
+        text-decoration: underline
+
+.id_l
+    text-align: left
+.id_c
+    text-align: center
+.id_r
+    text-align: right
+
+.id_docsig
+    font-family: 'Doctor Signature', sans-serif
+
+.id_charSig
+    position: absolute
+    bottom: 20px
+    left: $leftoffset
+    text-align: left
+    font-size: 15px
+
+.id_approveSig
+    position: absolute
+    right: $rightoffset
+    bottom: 20px
+    font-size: 8px
+
+    .id_deets
+        text-transform: uppercase
+
+    .id_docsig
+        font-size: 10px

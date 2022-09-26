@@ -1,0 +1,78 @@
+form#form(action="") 
+    | Village
+    br
+    select#village(name="village", required="required") 
+        option(value="kono") Konohagakure
+        option(value="kumo") Kumogakure
+        option(value="hoshi") Hoshigakure 
+        option(value="suna") Sunagakure
+        option(value="kiri") Kirigakure 
+        option(value="tanbo") Tanbogakure
+    br
+    br
+    | First Name
+    br
+    input#firstName(type="text", name="firstName", required="required")
+    br
+    br
+    | Last Name
+    br
+    input#lastName(type="text", name="lastName", required="required")
+    br
+    br
+    | Image Link
+    br
+    input#firstName(type="text", name="img", required="required")
+    br
+    br 
+    | Rank
+    br
+    input#rank(type="text", name="rank", required="required")
+    br
+    br 
+    | Age
+    br
+    input#age(type="text", name="age", required="required")
+    br
+    br
+    |Gender 
+    br
+    input#gender(type="text", name="gender", required="required")
+    br
+    br
+    | Eye Color
+    br
+    input#eyeColor(type="text", name="eyeColor", required="required")
+    br
+    br
+    | Hair Color
+    br
+    input#hairColor(type="text", name="hairColor", required="required")
+    br
+    br
+    | Height
+    br
+    input#height(type="text", name="height", required="required")
+    br
+    br
+    | Weight
+    br
+    input#weight(type="text", name="weight", required="required")
+    br
+    br
+    | Kage/Other Signing Authority
+    br
+    input#signingAuthority(type="text", name="sig", required="required")
+    br
+    br
+    input(type="submit", value="submit")
+
+#results
+    h2 ID Card
+    pre
+#preview
+    h2 Preview
+    pre
+
+//- script(src="../templates/id.js")
+script(src="index.js", type="module") 
